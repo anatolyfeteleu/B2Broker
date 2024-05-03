@@ -4,7 +4,7 @@ from core.models import Transaction, Wallet
 from core.tests.factories import (
     WalletFactory,
     TransactionFactory,
-    WalletWithTransactionsFactory
+    WalletWithTransactionsFactory,
 )
 
 

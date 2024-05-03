@@ -18,7 +18,8 @@ class TransactionFilterSetClass(filters.FilterSet):
 
 class WalletFilterSetClass(filters.FilterSet):
     order_by = filters.OrderingFilter(
-        fields=(("_balance", "_balance"),), field_labels={"_balance": "Balance"}
+        fields=(("_balance", "_balance"),),
+        field_labels={"_balance": "Balance"},
     )
 
     class Meta:

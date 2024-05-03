@@ -33,9 +33,7 @@ class WalletQuerySet(models.QuerySet):
 
 
 class Wallet(models.Model):
-    label = models.CharField(
-        max_length=128
-    )
+    label = models.CharField(max_length=128)
 
     objects = WalletQuerySet.as_manager()
 

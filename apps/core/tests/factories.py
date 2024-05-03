@@ -17,7 +17,6 @@ class WalletFactory(DjangoModelFactory):
 
 
 class WalletWithTransactionsFactory(WalletFactory):
-
     @factory.post_generation
     def transactions(self, create, extracted, **kwargs):
         if not create:
